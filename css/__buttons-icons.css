@@ -1,0 +1,143 @@
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 1.2rem 1.8rem;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  transition: 0.3s ease;
+  font-family: var(--font-family-1);
+  font-weight: var(--font-weight-bold);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Discord button Starting*/
+.btn-discord {
+  background-color: rgb(114, 137, 218);
+  box-shadow: 0 0 10px rgba(114, 137, 218, 0.75);
+  color: var(--color-text-light);
+}
+
+.btn-discord:hover {
+  background-color: rgb(78, 93, 148);
+  transform: scale(1.05);
+}
+
+.btn-discord:hover,
+.btn-discord:hover .discord-icon {
+  color: var(--color-text-hover);
+}
+
+/* Get Started button Starting*/
+.btn-getstarted {
+  background-color: #8c01fe;
+  border: 2px solid #8c01fe;
+  box-shadow: 0 0 10px #8c01fe;
+  color: var(--white);
+  width: 19.5rem;
+}
+
+.btn-getstarted:hover {
+  background-color: transparent;
+  transform: scale(1.05);
+}
+
+.btn-getstarted:hover,
+.btn-getstarted:hover .rightarrow-icon {
+  color: var(--color-text-light);
+}
+
+/* Order Now button Starting*/
+.btn-ordernow {
+  background-color: transparent;
+  border: 2px solid #8c01fe;
+  box-shadow: 0 0 10px #8c01fe;
+  color: var(--color-text-light);
+  width: 19.5rem;
+}
+
+.btn-ordernow:hover {
+  background-color: #8c01fe;
+  transform: scale(1.05);
+}
+
+.btn-ordernow:hover,
+.btn-ordernow:hover .cart-icon {
+  color: var(--color-dark);
+}
+
+/* Category button Starting*/
+.btn-category {
+  background-color: transparent;
+  color: var(--color-text-light);
+  border: 2px solid #8c01fe;
+  box-shadow: 0 0 10px #8c01fe;
+  height: 4rem;
+  width: fit-content;
+  max-width: 100%;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.btn-category:hover {
+  background-color: #8c01fe;
+  color: var(--color-dark);
+}
+
+.btn-category.active {
+  background-color: #8c01fe;
+  color: var(--color-dark);
+}
+
+/* Black Bar button and icon Starting*/
+#btn-blackbar {
+  display: none;
+  cursor: pointer;
+}
+
+#btn-blackbar.active #blackbarbutton-icon {
+  transform: rotate(90deg);
+}
+
+#btn-blackbar:hover,
+#btn-blackbar:hover #blackbarbutton-icon {
+  color: var(--color-text-light);
+}
+
+#blackbarbutton-icon {
+  color: var(--color-text-hover);
+  transition: 0.3s ease;
+  font-size: 3rem;
+}
+
+/* Icons Starting */
+.discord-icon {
+  font-size: 1.6rem;
+  color: var(--color-text-light);
+  margin-right: 1rem;
+  transition: 0.3s ease;
+}
+
+.rightarrow-icon {
+  font-size: 1.6rem;
+  color: var(--color-dark);
+  margin-left: 1.5rem;
+  transition: 0.3s ease;
+}
+
+.downarrow-icon {
+  font-size: 1.6rem;
+  margin-top: 0.7rem;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+  color: var(--color-text-light);
+  margin-right: 1rem;
+  transition: 0.3s ease;
+}
